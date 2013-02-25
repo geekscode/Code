@@ -42,7 +42,7 @@ $config['cdn_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -376,6 +376,11 @@ $config['proxy_ips'] = '';
 
 
 $config['key_login'] = 'Intonasi123';
+
+
+$config['primary'] = "Masjid Jami";
+$config['secondary'] = "Riyadhus Solihin";
+$config['address'] = "Jl. H. Najih Rt 001 Rw 06 Kreo Selatan Larangan Tangerang";
 
 /*
 | -------------------------------------------------------------------

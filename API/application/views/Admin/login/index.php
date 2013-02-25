@@ -19,13 +19,13 @@
 			<span>Untuk Masuk kedalam Halaman Admin, Masukan Username and Password Anda !</span>
 		</div>
 		<div class="content">
-			<input name="username" type="text" class="input username" placeholder="Username" value="<?php echo set_value('username'); ?>">
+			<input name="username" type="text" class="input username" placeholder="Username" value="<?php echo set_value('username'); ?>" tabindex="1">
 				<div class="user-icon"></div>
-			<input name="password" type="password" class="input password" placeholder="Password">
+			<input name="password" type="password" class="input password" placeholder="Password" tabindex="2">
 				<div class="pass-icon"></div>
 		</div>
 		<div class="footer">
-			<a href="reset-password.html" name="submit" class="register">Forgot your password?</a><input type="submit" name="submit" value="Submit" class="button" />							
+			<a href="reset-password.html" name="submit" class="register" tabindex="3">Forgot your password?</a><input type="submit" name="submit" value="Submit" class="button" tabindex="4" />
 		</div>
 	<?php echo form_close(); ?>
 </div>
