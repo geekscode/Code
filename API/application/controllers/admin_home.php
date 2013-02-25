@@ -4,7 +4,7 @@
  * 	
  */
 
-class Admin_home extends CI_Controller{
+/*class Admin_home extends CI_Controller{
 
 	public function __construct()
 	{
@@ -41,29 +41,6 @@ class Admin_home extends CI_Controller{
 	public function addUsers()
 	{
 
-		/*$config = array(
-				array(
-					'field' => 'username',
-					'label' => 'Username',
-					'rules' => 'required|min_length[4]|maxlength[15]',
-					),
-				array(
-					'field' => 'password',
-					'label' => 'Password',
-					'rules' => 'required|min_length[4]|maxlength[15]|matches[passwordConf]',
-					),
-				array(
-					'field' => 'passwordConf',
-					'label' => 'Password Confirmation',
-					'rules' => 'required',
-					),
-				array(
-					'field' => 'namalengkap',
-					'label' => 'Nama Lengkap',
-					'rules' => 'required|min_length[4]',
-					)
-				);*/
-
 		$this->form_validation->set_rules('username','Username','required|min_length[4]|max_length[10]');
 		$this->form_validation->set_rules('password','Password','required|min_length[4]');
 
@@ -92,4 +69,4 @@ class Admin_home extends CI_Controller{
 		redirect('admin');
 
 	}
-}
+}*/

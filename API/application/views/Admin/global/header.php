@@ -22,10 +22,10 @@
    <div class="navbar">
       <div class="navbar-inner">
          <div class="nav-collapse collapse">
-            <a class="brand" href="<?php base_url(); ?>admin_home"><span class="first"><?php echo $this->config->item('primary'); ?></span> <span class="second"><?php echo $this->config->item('secondary'); ?></span></a>
+            <a class="brand" href="<?php base_url(); ?>admin/home"><span class="first"><?php echo $this->config->item('primary'); ?></span> <span class="second"><?php echo $this->config->item('secondary'); ?></span></a>
             <ul class="nav">
-               <li class=""><a href="<?php echo base_url();?>index.php/admin_home"><i class="icon-home icon-white"></i> Beranda</a></li>
-               <li><a href="<?php echo base_url(); ?>index.php/admin_home/manageUser"><i class="icon-user"></i> Management User</a></li>
+               <li class=""><a href="<?php echo base_url();?>index.php/admin/home"><i class="icon-home icon-white"></i> Beranda</a></li>
+               <li><a href="<?php echo base_url(); ?>index.php/admin/manageUser"><i class="icon-user"></i> Management User</a></li>
                <li><a href=""><i></i></a></li>
                <li><a href=""><i></i></a></li>
             </ul>
@@ -39,7 +39,7 @@
                </a>
                   <ul class="dropdown-menu">
                      <li><a href="resume.php">Portofolio</a></li>
-                     <li><a href="<?php echo base_url();  ?>index.php/admin_home/logout">Logout</a></li>
+                     <li><a href="<?php echo base_url();?>index.php/admin/logout">Logout</a></li>
                   </ul>
             </li>                                
             <li>
