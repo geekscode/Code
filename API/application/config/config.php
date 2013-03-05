@@ -381,6 +381,7 @@ $config['key_login'] = 'Intonasi123';
 $config['primary'] = "Masjid Jami";
 $config['secondary'] = "Riyadhus Solihin";
 $config['address'] = "Jl. H. Najih Rt 001 Rw 06 Kreo Selatan Larangan Tangerang";
+$config['limit_data'] = '5';
 
 /*
 | -------------------------------------------------------------------

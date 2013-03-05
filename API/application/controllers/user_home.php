@@ -27,8 +27,8 @@ class User_home extends CI_Controller
 	public function index()
 	{
 		
-		$this->load->view('global/header');
-		$this->load->view('global/footer');
+		$this->load->view('Admin/global/header');
+		$this->load->view('Admin/global/footer');
 	}
 	public function logout()
 	{

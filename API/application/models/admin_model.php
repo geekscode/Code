@@ -31,15 +31,37 @@ class Admin_Model extends CI_Model {
 
 	}
 
-	public function getRecord($data)
+	public function showTable($table)
 	{
-		$this->db->insert('users', $data);
-		return ;
+		return $this->db->get($table);
+	}
+
+	public function getRecord($table,$data)
+	{
+		$this->db->insert($table, $data);
+	}
+	public function updateRecord($table,$data,$key)
+	{
+		$this->db->update($table,$data,$key);
+	}
+
+	public function getSelectedData($table,$data)
+	{
+		return $this->db->get_where($table,$data);
+	}
+	public function getAllDataLimited($table,$limit,$offset)
+	{
+		return $this->db->get($table, $limit, $offset);
+	}
+	public function deleteData($table,$id)
+	{
+		$this->db->delete($table,$id);
 	}
 	
-	public function showUsers()
+	
+	public function showkategori()
 	{
-		$query = $this->db->get('users');
+		$query = $this->db->get('kategori');
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
 				$data[] = $row;
