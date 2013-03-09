@@ -19,13 +19,14 @@ class Admin_Model extends CI_Model {
 				$data['pass'] = $row->password;
 				$data['namalengkap'] = $row->namalengkap;
 				$data['level'] = $row->level;
-			}						 
-			 return $data;
+				$data['logged_in'] = 'yesGetMeLogin';
+				$this->session->set_userdata($data);
+			}
+			return $data;
 			
 		}else{
 			$this->session->set_flashdata('result_login','Username Atau Password yang anda masukan salah !!');
 			header('location:'. base_url().'index.php/admin');
-			return false;
 			
 		}
 

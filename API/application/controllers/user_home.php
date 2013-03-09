@@ -15,25 +15,32 @@ class User_home extends CI_Controller
 	{
 		parent::__construct();
 		session_start();
-		if (!isset($_SESSION['username']) AND !isset($_SESSION['password'])) {
-			redirect('admin');
-		}
-		if ($_SESSION['level']!=="user") {
-			redirect('admin');
-		}
 	}
-
-
 	public function index()
 	{
+		$cek = $this->session->userdata('logged_in');
+		if (!empty($cek)) {
+			$status = $this->session->userdata('level');
+			if ($status=="user") {
+				$this->load->view('Admin/global/header');
+				$this->load->view('Admin/global/footer');
+			}else{
+				redirect('admin');
+			}
+		}else{
+			redirect('admin');
+		}
 		
-		$this->load->view('Admin/global/header');
-		$this->load->view('Admin/global/footer');
 	}
 	public function logout()
 	{
-		session_destroy();
-		redirect('admin');
+		$cek = $this->session->userdata('logged_in');
+		if (empty($cek)) {
+			redirect('admin');
+		}else{
+			$this->session->sess_destroy();
+			redirect('admin');
+		}
 
 	}
 }

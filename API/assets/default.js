@@ -46,4 +46,24 @@ $(function() {
 		    	$(label).closest('.control-group').addClass('success');
 		    }
 		  });
+
+	$('#addKategori').validate({
+		rules: {
+		       namakategori: {
+		        minlength: 4,
+		        maxlength:30,
+		        required: true
+		      },
+		       keterangan: {
+		         required: true,
+		      }
+
+		       },
+		    	highlight: function(label) {
+		    	$(label).closest('.control-group').addClass('error');
+		    	},
+		    	success: function(label) {
+		    	$(label).closest('.control-group').addClass('success');
+		    	}
+		});
 });

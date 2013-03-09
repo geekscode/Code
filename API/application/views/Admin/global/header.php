@@ -8,7 +8,7 @@
    <meta name="author" content="">
 
    <title>:: Masjid Riyadhus Solihin::</title>
-
+   
    <link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
    <link href="<?php echo base_url('assets/css/bootstrap-responsive.min.css') ?>" rel="stylesheet">
 	<link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
@@ -35,7 +35,7 @@
                         <i class="icon-briefcase"></i> Management News <strong class="caret"></strong>
                      </a>
                      <ul class="dropdown-menu">
-                        <li><a href="<?php echo base_url();?>index.php/admin/category">Add Kategori Berita</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/admin/showKategori">Add Kategori Berita</a></li>
                         <li><a href="<?php echo base_url();?>index.php/admin/addNews">Add Berita</a></li>
                      </ul>
                   </li>
@@ -45,7 +45,7 @@
             <div class="nav pull-right">
                <li class="dropdown">
                   <a href="###" class="dropdown-toggle" data-toggle="dropdown" data-test="hinge">
-                     <i class="icon-fire icon-white" ></i>&nbsp;<?php echo $_SESSION['namalengkap']; ?>&nbsp;
+                     <i class="icon-bookmark icon-white" ></i>&nbsp;<?php echo $_SESSION['namalengkap']; ?>&nbsp;
                      <strong class="caret"></strong>                  
                   </a>
                      <ul class="dropdown-menu">

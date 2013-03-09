@@ -33,7 +33,6 @@
 			<table class="table table-bordered table-condensed table-striped table-hover">
 				<thead class="info">
 					<tr class="info">
-						<!-- <th><center>No</center></th> -->
 						<th><center>Username</center></th>						
 						<th><center>Nama Lengkap</center></th>
 						<th><center>Email</center></th>
@@ -54,7 +53,7 @@
 							<td><?php echo $row->Telepon; ?></td>
 							<td><?php echo $row->Alamat; ?></td>
 							<td><center><?php echo $row->level; ?></center></td>
-							<td><center><a href="<?php echo base_url();?>index.php/admin/editUser/<?php echo $row->iduser; ?>" ><i class="icon-edit"></i> Edit </a><i class="divider-vertical">|</i><a href="<?php echo base_url();?>index.php/admin/hapus/<?php echo $row->iduser; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus?');" > <i class="icon-trash"></i> Hapus</center></td>
+							<td><center><a href="<?php echo base_url();?>index.php/admin/editUser/<?php echo $row->iduser; ?>" ><i class="icon-edit"></i> Edit </a><i class="divider-vertical">|</i><a href="<?php echo base_url();?>index.php/admin/hapusUsers/<?php echo $row->iduser; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus?');" > <i class="icon-trash"></i> Hapus</center></td>
 						</tr>
 					</tbody>
 				<?php endforeach; }?>

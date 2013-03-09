@@ -49,7 +49,7 @@
 						<div class="control-group">
 							<label for="password" class="control-label">Password</label>
 							<div class="controls">
-								<input type="password" placeholder="Masukan Password Anda .." id="password" name="password" data-original-title="password" tabindex="2" >
+								<input type="password" placeholder="Masukan Password Anda .." id="password" name="password" data-original-title="password" tabindex="2" value="<?php echo $password; ?>" >
 							</div>
 						</div>
 					</td>
@@ -104,6 +104,36 @@
 						</div>
 					</td>					
 				</tr>
+				<?php 
+					if ($status =='edit') {
+						if ($level=='user') {
+				?>
+				<tr>
+					<td>
+						<div class="control-group">
+							<label for="level" class="control-label">Level</label>
+							<div class="controls">
+								<input type="radio" name="level" value='user' checked> User <input type="radio" name="level" value='admin'> Admin
+							</div>
+						</div>	
+					</td>
+				</tr>
+				<?
+					}else{
+				?>
+				<tr>
+					<td>
+						<div class="control-group">
+							<label for="level" class="control-label">Level</label>
+							<div class="controls">
+								<input type="radio" name="level" value='user'> User <input type="radio" name="level" value='admin' checked> Admin
+							</div>
+						</div>
+					</td>
+				</tr>
+				<?php
+					}
+				} ?>
 				<tr>
 					<td>										
 						<div class="control-group">
